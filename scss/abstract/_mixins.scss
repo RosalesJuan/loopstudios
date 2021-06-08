@@ -1,0 +1,11 @@
+
+@mixin general-icon{
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  width: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+}

@@ -7,35 +7,46 @@
   <title>Frontend Mentor | Loopstudios landing page</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+    <img src="./images/desktop/image-hero.jpg" alt="vr game" class="desktop-img">
+    <img src="./images/mobile/image-hero.jpg" alt="vr game" class="mobile-img">
+    <div class="navbar-toggle" id="mobile-menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
     <nav>
-      <a href="#">loopstudios</a>
-      <ul>
+      <span href="#" class="title">loopstudios</span>
+      <ul class="navbar-menu">
         <li>
-          <a href="#">About</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li>
-          <a href="">Careers</a>
+          <a class="nav-link" href="">Careers</a>
         </li>
         <li>
-          <a href="">Events</a>
+          <a class="nav-link" href="">Events</a>
         </li>
         <li>
-          <a href="">Products</a>
+          <a class="nav-link" href="">Products</a>
         </li>
         <li>
-          <a href="">Support</a>
+          <a class="nav-link" href="">Support</a>
         </li>
       </ul>
-    </nav>
-    <h1>Immersive experiences that deliver</h1>
+      </nav>
+    <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
   </header>
-  <section>
-    <div class="img-container"><img src="/images/desktop/image-interactive.jpg" alt=""></div>
-    <div>
-      <h2>The leader in interactive VR</h2>
+
+  <section id="vr-description">
+    <div class="img-container"><img src="/images/desktop/image-interactive.jpg" alt="vr person" class="desktop-img"></div>
+    <div class="img-container"><img src="/images/mobile/image-interactive.jpg" alt="ver person" class="mobile-img"></div>
+    <div class="content">
+      <h2>THE LEADER IN INTERACTIVE VR</h2>
       <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
         projects for some of the best companies around the globe. Our award-winning 
         creations have transformed businesses through digital experiences that bind 
@@ -43,50 +54,79 @@
     </div>
   </section>
   
-  <section>
-    <h2>Our creations</h2>
-    <a href="#">See all</a>
-    <ul>
+  <section id="creations">
+    <div>
+      <h2>OUR CREATIONS</h2>
+      <div class="see-all desktop-see-all" id="toggle"><span>SEE ALL</span></div>
+    </div>
+    <ul class="cards" id="cards-toggle">
       <li>
+        <img src="/images/mobile/image-deep-earth.jpg" alt="earth" class="mobile-img">
+        <img src="/images/desktop/image-deep-earth.jpg" alt="earth" class="desktop-img">
         <h3>DEEP EARTH</h3>
       </li>
       <li>
+        <img src="/images/mobile/image-night-arcade.jpg" alt="earth" class="mobile-img">
+        <img src="/images/desktop/image-night-arcade.jpg" alt="arcade" class="desktop-img">
         <h3>NIGHT ARCADE</h3>
       </li>
       <li>
+        <img src="/images/mobile/image-soccer-team.jpg" alt="earth" class="mobile-img">
+        <img src="/images/desktop/image-soccer-team.jpg" alt="soccer team" class="desktop-img">
         <h3>SOCCER TEAM VR</h3>
       </li>
       <li>
+        <img src="/images/mobile/image-grid.jpg" alt="earth" class="mobile-img">
+        <img src="/images/desktop/image-grid.jpg" alt="grid" class="desktop-img">
         <h3>THE GRID</h3>
       </li>
       <li>
+        <img src="/images/mobile/image-from-above.jpg" alt="earth" class="mobile-img">
+        <img src="/images/desktop/image-from-above.jpg" alt="road" class="desktop-img">
         <h3>FROM UP ABOVE VR</h3>
       </li>
       <li>
+        <img src="/images/mobile/image-pocket-borealis.jpg" alt="earth" class="mobile-img">
+        <img src="/images/desktop/image-pocket-borealis.jpg" alt="boreballs" class="desktop-img">
         <h3>POCKET BOREALIS</h3>
       </li>
       <li>
+        <img src="/images/mobile/image-curiosity.jpg" alt="earth" class="mobile-img">
+        <img src="/images/desktop/image-curiosity.jpg" alt="curiosity" class="desktop-img">
         <h3>THE CURIOSITY</h3>
       </li>
       <li>
+        <img src="/images/mobile/image-fisheye.jpg" alt="earth" class="mobile-img">
+        <img src="/images/desktop/image-fisheye.jpg" alt="fisheye" class="desktop-img">
         <h3>MAKE IT FISHEYE</h3>
       </li>
     </ul>
+    <div>
+      <div class="see-all mobile-see-all" id="toggle"><span>SEE ALL</span></div>
+    </div>
   </section>
   <footer>
-    <h4>loopstudios</h4>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="">Careers</a></li>
-      <li><a href="">Events</a></li>
-      <li><a href="">Products</a></li>
-      <li><a href="">Support</a></li>
-    </ul>
-    <div class="link-icons">
-      
+    <div class="foot-links">
+      <h4>loopstudios</h4>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
     </div>
-    
-    <span>© 2021 Loopstudios. All rights reserved.</span>
+    <div class="link-icons">
+      <div>
+        <a href="https://www.facebook.com/" target="_blank"><img src="./images/icon-facebook.svg" alt="facebook"></a>
+        <a href="https://twitter.com/?lang=en" target="_blank"><img src="./images/icon-twitter.svg" alt="twitter"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="./images/icon-instagram.svg" alt="ig"></a>
+        <a href="https://www.pinterest.com/" tar><img src="./images/icon-pinterest.svg" alt="pinterest"></a>  
+      </div>
+      <span>© 2021 Loopstudios. All rights reserved.</span>
+    </div>  
+ 
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>

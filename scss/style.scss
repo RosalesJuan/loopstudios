@@ -1,5 +1,45 @@
+@use '../scss/abstract/' as *;
+@forward './components/nav-bar';
+@forward './components/vr-desc.scss';
+@forward './components/creations';
+@forward './components/footer';
+
 *{
   margin: 0 0;
   padding: 0 0;
   box-sizing: border-box;
+  font-family: 'Josefin Sans', 'Alata', sans-serif;
+  font-weight: 300;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: $White;
+  text-decoration: none;
+}
+p{
+  line-height: 1.35;
+}
+
+h1{
+  font-size: 5rem;
+}
+
+h2{
+  font-size: 3.5rem;
+}
+
+h3{
+  font-size: 2rem;
+}
+
+h4{
+  font-size: 1.5rem;
+}
+
+span{
+  color: $Dark-Gray;
 }

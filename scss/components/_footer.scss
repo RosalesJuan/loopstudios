@@ -1,0 +1,66 @@
+@use '../abstract/' as *;
+
+footer{
+  padding: 2.5rem 10rem;
+  background: $Black;
+  display: flex;
+  .link-icons{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    a{
+      padding: 0.5rem 0.5rem;
+    }
+  }
+  .foot-links{
+    flex: 1;
+  }
+  h4{
+    flex: 1;
+    font-weight: 400;
+    color: $White;
+    padding-bottom: 1rem;
+  }
+  ul{
+    display: flex;
+    li a{
+      padding-right: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px){
+  footer{
+    padding: 5rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 481px){
+  footer{ 
+    padding: 5rem 2.5rem;
+    flex-direction: column;
+    text-align: center;
+    .link-icons,
+    .foot-links{
+      text-align: center;
+    }
+    h4{
+      font-size: 2.5rem;
+    }
+    ul{
+      padding: 2rem 0;
+      display: grid;
+      gap: 1.5rem;
+      li a{
+        font-size: 1.5rem;
+      }
+    }
+    .link-icons div{
+      padding-bottom: 2rem;
+    }
+    .link-icons span {
+      font-size: 1.5rem;
+    }
+  }
+
+}
